@@ -1,0 +1,80 @@
+header, footer {
+  background-color: #896C71;
+  border-bottom: 1px solid;
+
+}
+
+ body{
+  background-attachment: scroll;
+  background-color:#FFDBE6;
+  width: 96%;
+  margin: 0 auto ;
+
+
+}
+h1 {
+  text-align: left;
+  padding-top: 2em;
+  padding-left: 1em;
+ }
+
+nav li {
+  display: inline;
+  margin-right: 2em;
+  width: 5em;
+  height: 5em;
+}
+li {
+  padding: 0.5em;
+
+}
+
+
+ blockquote {
+  float:right;
+  width: 200px;
+  font-size: 130%;
+  font-style: italic;
+  font-family:Times;
+  margin: 0px 0px 20px 20px;
+  padding: 20px;
+  border-top: 1px solid ;
+  border-bottom: 1px solid;
+ }
+
+article {
+text-align: center;
+font-family: Times;
+font-size: 120%;
+font-style: bold;
+padding-top: 5em;
+
+}
+
+aside{
+  margin-bottom: 300px;
+ float: left;
+ margin:10px;
+}
+.Contact-details{
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  float:left;
+  margin-bottom: 20px;
+
+  margin-top:200px;
+
+}
+
+footer{
+  clear: both;
+  font-size: 80%;
+  padding: 5px;
+  margin-top: 490px;
+  text-align: center;
+  position: relative;
+}
+
+
+
+
