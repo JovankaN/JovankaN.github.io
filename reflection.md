@@ -1,9 +1,5 @@
-
-
-                                       [Visit Page!](http://jovankan.github.io/index.html)
-
-
-
+ 
+  [Visit Page!](http://jovankan.github.io/index.html)
 
  - What did you learn about CSS padding, borders, and margin by doing this challenge?
   Padding is the space thats inside the element between the content and the border and goes around all four sides of the content, Border is the space between the padding and the margin same as padding goes around all four sides of the content, Margin is the space between the border and the next content, that space outside the border  is called margin.
