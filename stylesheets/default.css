@@ -6,12 +6,11 @@ header, footer {
 
  body{
   background-attachment: scroll;
-  background-color:#FFDBE6;
-  width: 96%;
+background-color: #FFDBE6;
+  width: 86%;
   margin: 0 auto ;
-
-
 }
+
 h1 {
   text-align: left;
   padding-top: 2em;
@@ -24,53 +23,60 @@ nav li {
   width: 5em;
   height: 5em;
 }
+
 li {
   padding: 0.5em;
-
 }
-
 
  blockquote {
   float:right;
-  width: 200px;
+  width: 300px;
   font-size: 130%;
   font-style: italic;
   font-family:Times;
-  margin: 0px 0px 20px 20px;
-  padding: 20px;
+  margin: 200px 0px 20px 20px;
+  padding: 30px;
   border-top: 1px solid ;
   border-bottom: 1px solid;
+  border-width: 50%;
  }
 
 article {
 text-align: center;
 font-family: Times;
-font-size: 120%;
-font-style: bold;
+font-size: 180%;
+font-style: inherit;
 padding-top: 5em;
 
+
 }
 
-aside{
-  margin-bottom: 300px;
- float: left;
- margin:10px;
+.Blog {
+  float:right;
+  font-size: 25px;
+  border-top: 1px solid;
+  border-bottom: 2px solid;
+  margin-bottom:10%;
+  margin-top: 10%;
+  margin-left: 70%;
 }
-.Contact-details{
+
+  .Contact {
+  float: center;
+  text-align: center;
   border-bottom: 1px solid;
   border-top: 1px solid;
-  float:left;
-  margin-bottom: 20px;
-
-  margin-top:200px;
-
+  margin-left: 50%;
+  margin-right: 50%;
+  margin-top: auto;
+  margin-bottom: 0.5em;
 }
 
 footer{
   clear: both;
   font-size: 80%;
   padding: 5px;
-  margin-top: 490px;
+  margin-top: 50px;
   text-align: center;
   position: relative;
 }
