@@ -22,16 +22,18 @@
 
 <section>
   <article>
-    <h3></h3>
-    <p></p>
+   
+    
 
     <h3>Arrays</h3>
     <p>Arrays are an ordered collection of objects , its job is to store other objects .Any objects can be stored in an array including other arrays,hashes , classes, any objects at all.The contents of an array always remains the same in the order it was stored unless we want to move the objects around.Since there are more then one way to create a new array, some of them are created the following way:<br />
     Creating with the "Array.new" method :<br />
 
-
-    <script src="https://gist.github.com/JovankaN/e678d253d457265a0028.js"></script> 
-
+    color = Array.new<br />
+    color.push "red"<br />
+    puts color<br />
+    => red ;<br />
+     
     
     Creating the literal way with the square brackets :<br />
 
@@ -45,6 +47,8 @@
     One thing that i want to point to in the second example is that in  arrays each element has an index number, starting from 0 and on. We can access them by calling this number like in :
     color = ["red", "green", "yellow"]
     return color[0] => "red",;<br /> When we called the array we reffered to the first elemenet in the array so we said return the first element in that array , and of course the counting starts from 0 in arrays and it increases by 1 like if we would like to call the second element we would call it like this: return color [1]=> "green"; and so on and so forth.<br /></p>
+    
+    
     <h3>Hashes</h3>
     <p>Like the arrays, Hashes are collection of objects. A collection that contains keys and value pairs, where any key and any value can be any Ruby object.Hashes perform based on their keys.We access the value of a hash by refereing to the key element. There are different ways to create a hash, but one of them is by using the literal constructor the curly braces" {} " which looks like this:,<br />
 
