@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DBC week-5 blog post</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+<style type="text/css"></style>
+</head>
+<body>
+<header>
+  <h1>Enumerable Method #cycle</h1>
+  <nav>
+    <ul>
+      <li><a href ="https://www.facebook.com/jovanka.nikolovski">Facebook  /</a></li>
+      <li><a href ="https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button">LinkedIN  /</a></li>
+      <li><a href ="https://twitter.com/YovankaN">Twitter  /</a></li>
+      <li><a href ="https://www.instagram.com/yovanka_n/">Instagram  /</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<section>
+  <article>
+    <h3>Enumerable #cycle Quick Summary</h3>
+    <p>When given a collection creates an infinitelly-repeating ordered source of its items. It Expects an optional block to act on the items in the infinitely repeating until we break it , until the "break" statement is encountered. And it Returns an enumerator that acts as the infinite source of the collection's items. But when no block is given , the output is an Enumerator of self.<br>
+      <br>
+    Example:<br>
+      <br>
+       numbers = [1,2,3,4,5,6,7,8,9,10,11,12]<br>
+       numbers.cycle<br>
+       => Enumerator[1,2,3,4,5,6,7,8,9,10,11,12]<br></p>
+
+    <h3>Enumerable #cycle and Arrays</h3>
+    <p>When we use it on Array and a block is provided, ".cycle" passes each item on the block. Once the last item has been passed, ".cycle" starts over again and again at the beginning of the array until we break the statement of the block<br>
+     <br>
+    Example:<br>
+    <br>
+      hours_of_day =[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]<br>
+
+      numbers.cycle do |n|<br>
+      p numbers<br>
+      break if num == 6<br>
+      end<br>
+      =>1<br>
+      2<br>
+      3<br>
+      4<br>
+      5<br>
+      6<br>
+      =>nil<br></p>
+
+    <h3>Enumerable #cycle and Hashes</h3>
+    <p>When we use ".cycle" on a hash and a block is given , it collects each key/value pair as either a two-element array with the key as a element[0] and its corresponding value as element [1],or two separate ite items, with the key as the first item and its value as the second item.And same with hashes when a block is provided, ".cycle" passes each item on the block. Once the last item has been passed, ".cycle" starts over again and again at the beginning of the hash until we break the statement of the block.<br>
+    <br>
+    Example:<br>
+    <br>
+       school=["teacher"=> "John Smith", "student"=>"Jovani N","teacher"=>"Summer A","student"=>"Anna W" ]<br>
+       school.cycle do |title,name|<br>
+       puts "Our favorite #{title} is #{name}"<br>
+       break if title == "student"<br>
+       end<br>
+       =>Our favorite teacher is John Smith<br>
+       Our favorite  student is Jovani N<br>
+       <br>
+       <br>
+       <br>
+       <br>
+    I hope this cleared up a little how this Enumerable Method can be used.<br></p>
+
+  </article>
+</section>
+
+<aside>
+  <section class="Home Pages">
+    <h3>Home Page</h3>
+    <nav>
+      <ul>
+  <li><a href="http://jovankan.github.io/index.html">Home</a></li>
+  </ul>
+  </nav>
+  </section>
+
+<section class="Contact-details">
+  <h3>Contact</h3>
+  <p>Jovanka Nikolovski<br />
+    <a href="mailto:jovankanikolovski@gmail.com">Email Jovanka Nikolovski<br /></a></p>
+  </section>
+ </aside>
+
+
+<footer>
+<p>Copy @ @2015 Jovanka Nikolovski</p>
+</footer>
