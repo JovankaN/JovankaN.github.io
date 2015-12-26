@@ -23,6 +23,9 @@ nav li {
   width: 5em;
   height: 5em;
 }
+h3 {
+  display: inline;
+}
 
 li {
   padding: 0.5em;
@@ -50,7 +53,7 @@ padding-top: 5em;
 
 
 }
-
+/*
 .Blog {
   float:right;
   font-size: 25px;
@@ -59,9 +62,9 @@ padding-top: 5em;
   margin-bottom:10%;
   margin-top: 10%;
   margin-left: 70%;
-}
+}*/
 
-  .Contact {
+  /*.Contact {
   float: center;
   text-align: center;
   border-bottom: 1px solid;
@@ -70,7 +73,7 @@ padding-top: 5em;
   margin-right: 50%;
   margin-top: auto;
   margin-bottom: 0.5em;
-}
+}*/
 
 footer{
   clear: both;
