@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DBC week-6 blog post</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+<style type="text/css"></style>
+</head>
+<body>
+<header>
+  <h1>Ruby Classes</h1>
+  <nav>
+    <ul>
+      <li><a href="http://jovankan.github.io/index.html"><h3>About Me  /</h3></a></li>
+      <li><a href ="https://www.facebook.com/jovanka.nikolovski"><h3>Facebook  /</h3></a></li>
+      <li><a href ="https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button"><h3>LinkedIN  /</h3></a></li>
+      <li><a href ="https://twitter.com/YovankaN"><h3>Twitter  /</h3</a></li>
+      <li><a href ="https://www.instagram.com/yovanka_n/"><h3>Instagram  /</h3></a></li>
+      <li><a href="mailto:jovankanikolovski@gmail.com"><h3>Contact</h3></a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<section>
+  <article>
+    <h3>Introduction to Ruby Classes</h3>
+    <p>Classes in Ruby are like a template or blueprint for defining data as objects and the methods that can operate on that data. The idea of the class is to group things together into one unit so we can have access to them. Every time we create something it becomes an Object(a piece of data that has been created from the Class blueprint).
+    Class defines a "state" and the "behaviour" of an object . They can be instantiated or having objects created that are instances of the class, we do that the following way:<br />
+    <br />
+    obj = Object.new<br />
+    <br />
+    When we use the dot on the class we send message to the class, in this case we have the "constructor" method whose purpose is to return us a new instance of the class. We define a class with the "class" keyword, and we name them with constants that begin with a capital letter. Lets create a Triangle class , initialize an object and give it a properties like side and lenght:<br />
+    <br />
+    class Triangle<br />
+     def initialize(side, length)<br />
+     @side = side<br />
+     @length = length<br />
+     end<br />
+    end<br />
+    <br />
+    First what is the "initialize" method doing? The "initialize" method defines the creation of the object, or "initialize" is called whenever a new object is created with the class. We take  its parametars and we turn them into instance variables "@side" and "@length" that we set them equal to the Object's side and the length. Instance variables store the side and the length of the Triangle. Instance variables are like any other other variable except they are visible to the Object they belong to, and can be passed between any other methods that are defined in that class.<br />
+    <br />
+    Let's create two more methods where we will get the length of the Triangle and set a length ot the same and call those methods like this:<br />
+    <br />
+    class Triangle<br />
+     def initialize(side, length)<br />
+     @side = side<br />
+     @length = length<br />
+
+     end<br />
+     <br />
+     def length=(new_length)<br />
+     @length = new_length<br />
+     end<br />
+     <br />
+     def length<br />
+     @length<br />
+     end<br />
+    end<br />
+    <br />
+    triangle = Triangle.new(3, 5)<br />
+    triangle.length<br />
+    >> 5<br />
+    triangle.length =(10)<br />
+    >> 10<br />
+    triangle.length<br />
+    >> 10<br />
+    <br />
+    Now why do we use getter and setter methods? When we need to set , add or change an Object's state at some point we use setter method, or lets put it this way, "getters" and "setters" are  methods that are responsible for setting an instance variable (setter), and retrieving the value of an instance variable (getter). Another interesting thing is that Ruby has built in methods to make the code cleaner and simpler that are equivalent to these getter and setter methods, we call them them the "attr_*" method family. Lets refactor the code above :<br />
+    <br />
+    class Triangle<br />
+    attr_reader :side , :length<br />
+    attr_writer :length<br />
+     def initialize(side, length)<br />
+     @side = side<br />
+     @length = length<br />
+     end<br />
+    end<br />
+    <br />
+    Beautiful right! The "attr_reader" is an attribute of an object that allows its value to be viewed and called outside of the class,   it is immutable and equivalent to the "getter" method. The "attr_writer" is an attribute of an object that allows its value to be changed, added etc., from outside of the class and equivalent to the "setter" method. These attributes are wrapped around our instance variables , and the instance variable that has the ability to get and set values can be also listed with the "attr_accessor" instead. This "attr_accessor" has the ability of both combined "attr_reader" and "attr_writer", it creates the reader and writer methods, and it gives us even better , simpler one-line code. So it would look something like this:<br />
+    <br />
+    class Triangle<br />
+    attr_reader :side <br />
+    attr_accessor :length<br />
+     def initialize(side, length)<br />
+     @side = side<br />
+     @length = length<br />
+     end<br />
+    end<br />
+    <br />
+    I think in short notes i pointed out to some of the important topics of creating, initializing and organizing Objects with Classes. Hope you found it useful!
+     </p>
+
+
+
+
+
+  </article>
+</section>
+
+
+
+<footer>
+<p>Copy @ @2015 Jovanka Nikolovski</p>
+</footer>
