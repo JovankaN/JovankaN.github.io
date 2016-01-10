@@ -1,19 +1,22 @@
 header, footer {
-  background-color: #896C71;
+  background-color: #896D79;
   border-bottom: 1px solid;
 
 }
+header {
+  text-align: center;
 
+}
  body{
   background-attachment: scroll;
-background-color: #FFDBE6;
+  background-color: #FFDBdd;
   width: 86%;
   margin: 0 auto ;
 }
 
 h1 {
-  text-align: left;
-  padding-top: 2em;
+  text-align: center;
+  padding-top: 0.8em;
   padding-left: 1em;
  }
 
@@ -23,7 +26,9 @@ nav li {
   width: 5em;
   height: 5em;
 }
-h3 {
+h2 {
+  font-weight: bold;
+  color: black;
   display: inline;
 }
 
@@ -45,12 +50,12 @@ li {
  }
 
 article {
-text-align: center;
-font-family: Times;
-font-size: 180%;
+text-align: left;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-size: 140%;
 font-style: inherit;
-padding-top: 5em;
-
+padding-top: 3em;
+padding-bottom: 5em;
 
 }
 /*
@@ -76,6 +81,7 @@ padding-top: 5em;
 }*/
 
 footer{
+  text-transform: uppercase;
   clear: both;
   font-size: 80%;
   padding: 5px;
