@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DBC week-8 blog post(TDD)</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+<style type="text/css"></style>
+</head>
+<body>
+<header>
+  <h1> Test-driven Development(TDD)</h1>
+  <nav>
+    <ul>
+      <li><a href="http://jovankan.github.io/index.html"><h2>About Me  /</h2></a></li>
+
+      <li><a href="mailto:jovankanikolovski@gmail.com"><h2>Contact</h2></a></li>
+      <li><a href="http://jovankan.github.io/blog./blog-template.html"><h2>Blog Posts</h2></a></li>
+      <li><a href="http://jovankan.github.io/projects/index.html"><h2>Projects</h2></a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<section>
+  <article>
+    <h3>What is TDD?</h3>
+    This is a graphical example of the <b>TDD</b> cycle :
+    <li><img src="../imgs/tdd.png"alt="" height="300"></a></li><br>
+    <p><b>Test-driven Development</b>(<b>TDD</b>) is a software developmenet process that relies on the repetition of a very short development cycle :<br>
+      <br>
+      <b>First</b> the developer writes an (initially falling) automated test case that defines a desired improvement or new function.We write the test in whatever testing framework is appropriate to the software environment, it could be also a modified version of an existing test.<br>
+      <br>
+       <b>Second</b> produces the minimum amount of code to pass that  or that the new test does not mistakenly pass without requiring any new code, and that the required feature does not already exist.This step also tests the test itself, in the negative: it rules out the possibility that the new test always passes, and therefore is worthless. The new test should also fail for the expected reason.<br><b>
+       <br>
+       Third</b>step is to write some code that causes the test to pass. The new code written at this stage is not perfect and may, for example, pass the test in an inelegant way<br>
+       <br>
+       <b>Fourth</b>We run all the tests so that the developer can be confident that all the tests pass.If they don't , the code needs to be adjusted so it will pass al the tests.<br>
+       <br>
+        <b>Fifth </b>refactors the new code to acceptable standards and the fourth  step is to run your tests again. If they fail you need to update your functional code and retest. Once the tests pass the next step is to start over (you may first need to refactor any duplication out of your design as needed, turning <b>Test-First Development</b>(<b>TFD</b>) into <b>TDD</b>). <br>
+        <br>
+        Some of the developers refered to this simple formula for better understanding :<br>
+        <br>
+        <b>TDD = Refactoring + TFD;</b><br>
+      <br></p>
+      <br>
+
+ <p>There are many more interesting examples on TDD and the way it works, so if you are still interested in finding more about it visit : <a href="http://www.agiledata.org/essays/tdd.html">http://www.agiledata.org/essays/tdd.html ,</a><br>and <a href="https://en.wikipedia.org/wiki/Test-driven_development">https://en.wikipedia.org/wiki/Test-driven_development</a></p>
+  </article>
+</section>
+
+
+<footer>
+<nav>
+    <ul>
+     <li><a href ="https://www.facebook.com/jovanka.nikolovski"><h2>Facebook  /</h2></a></li>
+      <li><a href ="https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button"><h2>LinkedIN  /</h2></a></li>
+      <li><a href ="https://twitter.com/YovankaN"><h2>Twitter  /</h2></a></li>
+      <li><a href ="https://www.instagram.com/yovanka_n/"><h2>Instagram  /</h2></a></li>
+
+    </ul>
+  </nav>
+<h4>Copy @ 2015 Jovanka Nikolovski</h4>
+</footer>
+
+  </body>
+</html>
+

@@ -1,5 +1,6 @@
 header{
  background-color:#D4AAA3;
+ text-align: center;
 }
 
 
@@ -19,6 +20,7 @@ nav li {
  article{
   font-size: 20px;
   margin-top: 5em;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
  }
 aside{
   font-size: 35px;
@@ -30,12 +32,13 @@ aside{
   margin-left: 80%;
 
 }
-.titles{
+.titles {
+  clear:both;
   text-align: center;
-
+  margin-top: 7em;
 }
 
-h3{
+h2{
   margin-top: 1em;
   display: inline;
 }
@@ -46,13 +49,24 @@ p {
 
   footer{
   background-color:#D4AAA3;
-  /*clear: both;*/
-   text-align: center;
-  font-size: 90%;
+  text-transform: uppercase;
+  clear: both;
+  font-size: 80%;
   padding: 5px;
-  margin-top:15%;
- /* position: static;*/
+  margin-top:20%;
+  text-align: center;
+  position: relative;
   }
+
+/*footer{
+  text-transform: uppercase;
+  clear: both;
+  font-size: 80%;
+  padding: 5px;
+  margin-top: 50px;
+  text-align: center;
+  position: relative;
+}*/
    span {
   font-style:italic;
   font-family: Timex;
